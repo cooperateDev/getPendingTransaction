@@ -1,9 +1,9 @@
-import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
-import formatDate from '../../utils/formatDate';
-import { connect } from 'react-redux';
-import { Grid, Row, Col, Container } from "react-bootstrap";
+import React from 'react';
+// import PropTypes from 'prop-types';
+// import { Link } from 'react-router-dom';
+// import formatDate from '../../utils/formatDate';
+// import { connect } from 'react-redux';
+import { Row, Col, Container } from "react-bootstrap";
 import schoolImg from '../../img/school1.png';
 
 class SchoolItem extends React.Component {

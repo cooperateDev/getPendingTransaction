@@ -1,11 +1,11 @@
-import React, { Fragment, useEffect } from 'react';
-import { Link, Redirect } from 'react-router-dom';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
+import React, { Fragment } from 'react';
+// import { Link, Redirect } from 'react-router-dom';
+// import { connect } from 'react-redux';
+// import PropTypes from 'prop-types';
 import SchoolItem from './SchoolItem'
 import schoolImg from '../../img/school1.png';
-import { Grid, Row, Col,Container } from "react-bootstrap";
-import { getList } from '../../actions/post';
+import { Row, Col,Container } from "react-bootstrap";
+// import { getList } from '../../actions/post';
 import styles from '../../style.css';
 
   
@@ -15,10 +15,9 @@ class SchoolList extends React.Component {
     }
   
     componentDidMount() {
-      fetch('https://api.airtable.com/v0/appjvmJqlLc4cm9CM/Table%201?api_key=keycGySWvM9Wh654X')
+      fetch('https://api.airtable.com/v0/appjvmJqlLc4cm9CM/Table%201?api_key=keyGwhT7dG8Ylc0R1')
         .then(res => res.json())
         .then(res => {
-          
           this.setState({ listData: res.records });
         })
         .catch(error => {})

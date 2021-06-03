@@ -11,8 +11,10 @@ import Profiles from '../profiles/Profiles';
 import Profile from '../profile/Profile';
 import Posts from '../posts/Posts';
 import Post from '../post/Post';
+import SchoolList from '../schools/SchoolList';
 import NotFound from '../layout/NotFound';
 import PrivateRoute from '../routing/PrivateRoute';
+import PendingTransactionList from '../getPendingTransaction/PendingTransactionList';
 
 const Routes = props => {
   return (
@@ -21,7 +23,8 @@ const Routes = props => {
       <Switch>
         <Route exact path="/register" component={Register} />
         <Route exact path="/login" component={Login} />
-        <Route exact path="/profiles" component={Profiles} />
+        <Route exact path="/home" component={PendingtransactionList} />
+        {/* <Route exact path="/profile" component={SchoolList} /> */}
         <Route exact path="/profile/:id" component={Profile} />
         <PrivateRoute exact path="/dashboard" component={Dashboard} />
         <PrivateRoute exact path="/create-profile" component={ProfileForm} />

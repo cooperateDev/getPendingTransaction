@@ -6,12 +6,14 @@ import {
   ADD_POST,
   GET_POST,
   ADD_COMMENT,
-  REMOVE_COMMENT
+  REMOVE_COMMENT,
+  SET_TRANSACTION
 } from '../actions/types';
 
 const initialState = {
   posts: [],
   post: null,
+  tx: [],
   loading: true,
   error: {}
 };
@@ -75,6 +77,11 @@ function postReducer(state = initialState, action) {
         },
         loading: false
       };
+    case SET_TRANSACTION:
+      return {
+        ...state,
+        tx: payload
+      }
     default:
       return state;
   }
