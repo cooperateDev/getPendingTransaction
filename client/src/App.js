@@ -14,7 +14,7 @@ import store from './store';
 // import { loadUser } from './actions/auth';
 // import setAuthToken from './utils/setAuthToken';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Nav, Container  } from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
 import navbar from '../src/img/navbar.png';
 
 import './App.css';
@@ -27,17 +27,16 @@ const App = () => {
         <Fragment>
           {/* <Navbar /> */}
           <Navbar className="navbar" >
-              <Nav className="navbarItem " pullRight >
-                  <Nav.Link  href="/profile"><p className="linkItem">Riders</p></Nav.Link>
-                  <Nav.Link  href="#features"><p className="linkItem">Schools</p></Nav.Link>
-                  <Nav.Link  href="#pricing"><p className="linkItem">Stores</p></Nav.Link>
-                  <Nav.Link  href="#pricing"><p className="linkItem">Brands</p></Nav.Link>
-              </Nav>
-            </Navbar>
+            <Nav className="navbarItem " >
+              {/* <Nav.Link href="/profile"><p className="linkItem">Riders</p></Nav.Link>
+              <Nav.Link href="#features"><p className="linkItem">Schools</p></Nav.Link>
+              <Nav.Link href="#pricing"><p className="linkItem">Stores</p></Nav.Link>
+              <Nav.Link href="#pricing"><p className="linkItem">Brands</p></Nav.Link> */}
+            </Nav>
+          </Navbar>
 
           <GetTransaction />
           {/* <SchoolList /> */}
-          {/* <PendingTransactionList /> */}
 
         </Fragment>
       </Router>

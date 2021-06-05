@@ -19,7 +19,7 @@ class PendingTransactionItem extends React.Component {
 		// 	subStr = subStr.substr(1, 100) + "...";
 		const item = this.props.item.map((value) =>
 			<ul>
-				<li key={value[0]}>
+				<li>
 					<h3>{value[0]}</h3>
 					<p>{value[1]}</p>
 				</li>
