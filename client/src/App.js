@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // import Navbar from './components/layout/Navbar';
 // import Landing from './components/layout/Landing';
 // import Routes from './components/routing/Routes';
-import SchoolList from './components/schools/SchoolList';
 // import PendingTransactionList from './components/getPendingTransaction/PendingTransactionList';
 import GetTransaction from './components/getPendingTransaction/getTransaction';
 // import { LOGOUT } from './actions/types';
@@ -26,13 +25,13 @@ const App = () => {
       <Router>
         <Fragment>
           {/* <Navbar /> */}
-          <Navbar className="navbar" >
-            <Nav className="navbarItem " >
+          <Navbar className="" >
+            {/* <Nav className="" > */}
               {/* <Nav.Link href="/profile"><p className="linkItem">Riders</p></Nav.Link>
               <Nav.Link href="#features"><p className="linkItem">Schools</p></Nav.Link>
               <Nav.Link href="#pricing"><p className="linkItem">Stores</p></Nav.Link>
               <Nav.Link href="#pricing"><p className="linkItem">Brands</p></Nav.Link> */}
-            </Nav>
+            {/* </Nav> */}
           </Navbar>
 
           <GetTransaction />
